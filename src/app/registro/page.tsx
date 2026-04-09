@@ -6,7 +6,7 @@ const CATEGORIES = ['L1', 'L2', 'SWING1W', 'SWING2W', 'SWING1M', 'SWING6M', 'SWI
 const WINDOWS = ['POSTMKT', 'PREMKT', 'APERTURA', 'POST_SFURIATA', 'INTRADAY']
 
 const EMPTY_TRADE: Partial<Trade> = {
-  trade_done: true, category: 'L1', stop_pct: -8,
+trade_done: true, category: 'L1',
   target_pct: 10, catalyst_valid: 'CONFERMATO', protocol_ok: true
 }
 
