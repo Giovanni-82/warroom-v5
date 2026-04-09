@@ -16,7 +16,8 @@ export interface Ticker {
   float_shares: number
   short_float: number
   avg_volume: number
-  price: number
+  stop_price: number
+  stop_pct: number
   sma50: number
   sma200: number
   week52_high: number
