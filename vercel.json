@@ -4,7 +4,19 @@
   "outputDirectory": ".next",
   "crons": [
     {
-      "path": "/api/cron/nightly",
+      "path": "/api/cron/premarket?secret=warroom-cron-2030",
+      "schedule": "0 12 * * 1-5"
+    },
+    {
+      "path": "/api/cron/intraday?secret=warroom-cron-2030",
+      "schedule": "*/5 13-20 * * 1-5"
+    },
+    {
+      "path": "/api/cron/postsession?secret=warroom-cron-2030",
+      "schedule": "0 21 * * 1-5"
+    },
+    {
+      "path": "/api/cron/nightly?secret=warroom-cron-2030",
       "schedule": "0 20 * * *"
     }
   ]
